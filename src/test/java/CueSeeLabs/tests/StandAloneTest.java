@@ -15,9 +15,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class StandAloneTest {
     public static void main(String[] args) {
         // Set up WebDriverManager for ChromeDriver
+        // new comments are added
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-
+        
         try {
             // Set an implicit wait
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
